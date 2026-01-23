@@ -14,12 +14,12 @@ CoplanarDifferentialStripline::CoplanarDifferentialStripline()
     substrate_height_below = 0.2e-3;
     e_r_below = 4.1;
     // create parameters
-    parameters.push_back({.name = "Trace Width (w)", .unit = "m", .prefixes = "um ", .precision = 4, .value = &width});
-    parameters.push_back({.name = "Trace Height (t)", .unit = "m", .prefixes = "um ", .precision = 4, .value = &height});
-    parameters.push_back({.name = "Gap Width (s1)", .unit = "m", .prefixes = "um ", .precision = 4, .value = &gapTrace});
-    parameters.push_back({.name = "Gap Width (s2)", .unit = "m", .prefixes = "um ", .precision = 4, .value = &gapCoplanar});
-    parameters.push_back({.name = "Substrate Height (h1)", .unit = "m", .prefixes = "um ", .precision = 4, .value = &substrate_height_above});
-    parameters.push_back({.name = "Substrate Height (h2)", .unit = "m", .prefixes = "um ", .precision = 4, .value = &substrate_height_below});
+    parameters.push_back({.name = "Trace Width (w)", .unit = "m", .prefixes = "um ", .precision = 6, .value = &width});
+    parameters.push_back({.name = "Trace Height (t)", .unit = "m", .prefixes = "um ", .precision = 6, .value = &height});
+    parameters.push_back({.name = "Gap Width (s1)", .unit = "m", .prefixes = "um ", .precision = 6, .value = &gapTrace});
+    parameters.push_back({.name = "Gap Width (s2)", .unit = "m", .prefixes = "um ", .precision = 6, .value = &gapCoplanar});
+    parameters.push_back({.name = "Substrate Height (h1)", .unit = "m", .prefixes = "um ", .precision = 6, .value = &substrate_height_above});
+    parameters.push_back({.name = "Substrate Height (h2)", .unit = "m", .prefixes = "um ", .precision = 6, .value = &substrate_height_below});
     parameters.push_back({.name = "Substrate dielectric constant (h1)", .unit = "", .prefixes = " ", .precision = 3, .value = &e_r_above});
     parameters.push_back({.name = "Substrate dielectric constant (h2)", .unit = "", .prefixes = " ", .precision = 3, .value = &e_r_below});
 }
