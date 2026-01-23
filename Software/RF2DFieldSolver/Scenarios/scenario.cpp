@@ -35,22 +35,22 @@ Scenario::Scenario(QWidget *parent) :
     ui->autoArea->setChecked(true);
     ui->xleft->setUnit("m");
     ui->xleft->setPrefixes("um ");
-    ui->xleft->setPrecision(4);
+    ui->xleft->setPrecision(6);
     ui->xleft->setValue(-3e-3);
 
     ui->xright->setUnit("m");
     ui->xright->setPrefixes("um ");
-    ui->xright->setPrecision(4);
+    ui->xright->setPrecision(6);
     ui->xright->setValue(3e-3);
 
     ui->ytop->setUnit("m");
     ui->ytop->setPrefixes("um ");
-    ui->ytop->setPrecision(4);
+    ui->ytop->setPrecision(6);
     ui->ytop->setValue(3e-3);
 
     ui->ybottom->setUnit("m");
     ui->ybottom->setPrefixes("um ");
-    ui->ybottom->setPrecision(4);
+    ui->ybottom->setPrecision(6);
     ui->ybottom->setValue(-1e-3);
 }
 
