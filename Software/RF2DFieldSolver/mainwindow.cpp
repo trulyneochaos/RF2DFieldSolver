@@ -34,17 +34,17 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->resolution->setUnit("m");
     ui->resolution->setPrefixes("um ");
-    ui->resolution->setPrecision(4);
+    ui->resolution->setPrecision(6);
     ui->resolution->setValue(10e-6);
 
     ui->gaussDistance->setUnit("m");
     ui->gaussDistance->setPrefixes("um ");
-    ui->gaussDistance->setPrecision(4);
+    ui->gaussDistance->setPrecision(6);
     ui->gaussDistance->setValue(20e-6);
 
     ui->tolerance->setUnit("V");
     ui->tolerance->setPrefixes("pnum ");
-    ui->tolerance->setPrecision(4);
+    ui->tolerance->setPrecision(6);
     ui->tolerance->setValue(100e-9);
 
     ui->threads->setValue(20);
@@ -53,25 +53,25 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->xleft->setUnit("m");
     ui->xleft->setPrefixes("um ");
-    ui->xleft->setPrecision(4);
+    ui->xleft->setPrecision(6);
     connect(ui->xleft, &SIUnitEdit::valueChanged, this, updateViewArea);
     ui->xleft->setValue(-3e-3);
 
     ui->xright->setUnit("m");
     ui->xright->setPrefixes("um ");
-    ui->xright->setPrecision(4);
+    ui->xright->setPrecision(6);
     connect(ui->xright, &SIUnitEdit::valueChanged, this, updateViewArea);
     ui->xright->setValue(3e-3);
 
     ui->ytop->setUnit("m");
     ui->ytop->setPrefixes("um ");
-    ui->ytop->setPrecision(4);
+    ui->ytop->setPrecision(6);
     connect(ui->ytop, &SIUnitEdit::valueChanged, this, updateViewArea);
     ui->ytop->setValue(3e-3);
 
     ui->ybottom->setUnit("m");
     ui->ybottom->setPrefixes("um ");
-    ui->ybottom->setPrecision(4);
+    ui->ybottom->setPrecision(6);
     connect(ui->ybottom, &SIUnitEdit::valueChanged, this, updateViewArea);
     ui->ybottom->setValue(-1e-3);
 
@@ -104,28 +104,28 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->capacitanceP->setUnit("F/m");
     ui->capacitanceP->setPrefixes("fpnum ");
-    ui->capacitanceP->setPrecision(4);
+    ui->capacitanceP->setPrecision(6);
 
     ui->inductanceP->setUnit("H/m");
     ui->inductanceP->setPrefixes("fpnum ");
-    ui->inductanceP->setPrecision(4);
+    ui->inductanceP->setPrecision(6);
 
     ui->impedanceP->setUnit("Ω");
-    ui->impedanceP->setPrecision(4);
+    ui->impedanceP->setPrecision(6);
 
     ui->capacitanceN->setUnit("F/m");
     ui->capacitanceN->setPrefixes("fpnum ");
-    ui->capacitanceN->setPrecision(4);
+    ui->capacitanceN->setPrecision(6);
 
     ui->inductanceN->setUnit("H/m");
     ui->inductanceN->setPrefixes("fpnum ");
     ui->inductanceN->setPrecision(4);
 
     ui->impedanceN->setUnit("Ω");
-    ui->impedanceN->setPrecision(4);
+    ui->impedanceN->setPrecision(6);
 
     ui->impedanceDiff->setUnit("Ω");
-    ui->impedanceDiff->setPrecision(4);
+    ui->impedanceDiff->setPrecision(6);
 
     // save/load
     connect(ui->actionOpen, &QAction::triggered, this, [=](){
