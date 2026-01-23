@@ -10,9 +10,9 @@ Microstrip::Microstrip()
     substrate_height = 0.2e-3;
     e_r = 4.1;
     // create parameters
-    parameters.push_back({.name = "Trace Width (w)", .unit = "m", .prefixes = "um ", .precision = 4, .value = &width});
-    parameters.push_back({.name = "Trace Height (t)", .unit = "m", .prefixes = "um ", .precision = 4, .value = &height});
-    parameters.push_back({.name = "Substrate Height (h)", .unit = "m", .prefixes = "um ", .precision = 4, .value = &substrate_height});
+    parameters.push_back({.name = "Trace Width (w)", .unit = "m", .prefixes = "um ", .precision = 6, .value = &width});
+    parameters.push_back({.name = "Trace Height (t)", .unit = "m", .prefixes = "um ", .precision = 6, .value = &height});
+    parameters.push_back({.name = "Substrate Height (h)", .unit = "m", .prefixes = "um ", .precision = 6, .value = &substrate_height});
     parameters.push_back({.name = "Substrate dielectric constant", .unit = "", .prefixes = " ", .precision = 3, .value = &e_r});
 }
 
