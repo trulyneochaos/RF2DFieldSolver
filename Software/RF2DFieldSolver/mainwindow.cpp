@@ -104,28 +104,28 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->capacitanceP->setUnit("F/m");
     ui->capacitanceP->setPrefixes("fpnum ");
-    ui->capacitanceP->setPrecision(4);
+    ui->capacitanceP->setPrecision(7);
 
     ui->inductanceP->setUnit("H/m");
     ui->inductanceP->setPrefixes("fpnum ");
-    ui->inductanceP->setPrecision(4);
+    ui->inductanceP->setPrecision(7);
 
     ui->impedanceP->setUnit("Ω");
-    ui->impedanceP->setPrecision(4);
+    ui->impedanceP->setPrecision(7);
 
     ui->capacitanceN->setUnit("F/m");
     ui->capacitanceN->setPrefixes("fpnum ");
-    ui->capacitanceN->setPrecision(4);
+    ui->capacitanceN->setPrecision(7);
 
     ui->inductanceN->setUnit("H/m");
     ui->inductanceN->setPrefixes("fpnum ");
-    ui->inductanceN->setPrecision(4);
+    ui->inductanceN->setPrecision(7);
 
     ui->impedanceN->setUnit("Ω");
-    ui->impedanceN->setPrecision(4);
+    ui->impedanceN->setPrecision(7);
 
     ui->impedanceDiff->setUnit("Ω");
-    ui->impedanceDiff->setPrecision(4);
+    ui->impedanceDiff->setPrecision(7);
 
     // save/load
     connect(ui->actionOpen, &QAction::triggered, this, [=](){
